@@ -21,3 +21,4 @@ app.get("/",(req,res) => {
 });
 
 app.use("/users", userRoutes);
+//Final Step: Run the server using the command: node index.js
