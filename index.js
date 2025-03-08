@@ -1,10 +1,15 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import userRoutes from './routes/users.js';
+import dotenv from 'dotenv';
 
 const app = express();
 
-const port = 5174;
+// Load environment variables
+dotenv.config();
+const port = process.env.PORT || 5175;
+
+// const port = 5174;
 
 app.use(bodyParser.json());
 
